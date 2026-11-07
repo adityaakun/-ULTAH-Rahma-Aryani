@@ -562,31 +562,26 @@
 }
 
 .masonry {
-  column-count: 2;
-  column-gap: 1.1rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem 1.1rem;
   padding: 0.6rem 0 2rem;
 }
 .masonry__item {
-  display: inline-block;
+  min-width: 0;
   width: 100%;
-  margin-bottom: 1.5rem;
-  break-inside: avoid;
-  -webkit-column-break-inside: avoid;
 }
 
 @media (min-width: 720px) {
   .masonry {
-    column-count: 3;
-    column-gap: 1.75rem;
-  }
-  .masonry__item {
-    margin-bottom: 2.25rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2.25rem 1.75rem;
   }
 }
 @media (min-width: 1080px) {
   .masonry {
-    column-count: 4;
-    column-gap: 2rem;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2.25rem 2rem;
   }
 }
 
@@ -936,4 +931,3 @@
   justify-items: start;
   padding-block: clamp(3rem, 10vw, 7rem);
 }
-
