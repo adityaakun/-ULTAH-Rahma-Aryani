@@ -1,0 +1,44 @@
+CATATAN MENAMBAHKAN FOTO BERDUA (halaman "Us")
+================================================
+
+CARA PAKAI
+- Taruh foto langsung di folder ini (src/assets/us/).
+- Tidak perlu daftar/kode apa pun: foto otomatis muncul di halaman "Us".
+- Menu "Us" dan tombol "See us together" di Home hanya tampil kalau
+  folder ini berisi minimal 1 foto. Folder kosong = menunya hilang.
+- Setelah menambah foto: jalankan ulang "npm run dev", atau build ulang
+  ("npm run build") lalu deploy lagi.
+
+SYARAT FOTO
+1. Format: .jpg, .jpeg, .png, atau .webp.
+   Foto HEIC/HEIF dari iPhone TIDAK bisa tampil di semua browser -> ubah
+   dulu ke JPG.
+2. Pakai file ASLI, bukan screenshot. Screenshot album (yang ada tulisan
+   "+4", border biru, dan UI chat) akan ikut terpotret dan terlihat jelek.
+   Simpan/unduh foto satu per satu dari chat atau galeri.
+3. Ukuran file: ideal 200 KB - 800 KB per foto (maksimal 1,5 MB).
+   Foto kamera langsung (3-10 MB) bikin website lambat dibuka di HP.
+   Kompres dulu lewat squoosh.app atau tinypng.com.
+4. Resolusi: sisi terpanjang sekitar 1400 - 2000 px sudah cukup tajam.
+   Lebih besar dari itu hanya memberatkan.
+5. Nama file: huruf kecil, tanpa spasi dan tanpa karakter aneh.
+   Contoh: us01.jpg, us02.jpg, us03.jpg
+   Urutan tampil mengikuti nama file. Pakai angka 2 digit (01, 02, ... 10)
+   supaya urutannya benar.
+6. Potret, lanskap, maupun kotak boleh dicampur, rasio asli dipertahankan.
+   Jangan beri bingkai/border sendiri; website sudah memberi gaya foto.
+7. Jumlah ideal 6 - 12 foto. Sedikit juga tidak masalah.
+8. Hapus data lokasi (GPS/EXIF) kalau fotonya mau dipublikasikan
+   (kebanyakan kompresor online sudah menghapusnya otomatis).
+9. Website di internet bisa dibuka siapa saja yang punya linknya. Pastikan
+   Rahma setuju fotonya dipajang.
+
+CAPTION (OPSIONAL)
+Buka src/data/us.js, isi di bagian usCaptions. Kunci harus sama persis
+dengan nama file:
+  "us01.jpg": "photobox pertama kita",
+Foto tanpa caption tampil polos.
+
+CATATAN
+- Foto di halaman Gallery (folder public/images/) berbeda dan tidak
+  berubah: itu tetap didaftarkan manual di src/data/gallery.js.
