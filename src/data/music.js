@@ -11,7 +11,7 @@ export const tracks = [
     title: "My Love Mine All Mine",
     artist: "mitski",
     note: "Lagu ini mungkin cocok untuk Kamu ",
-    spotifyUrl: "https://open.spotify.com/playlist/6R5S3ZcYDt7G4i16Vbs5wU?si=9HYNa0iWTD-bAW0YzH6-rw&utm_source=copy-link", // <- tempel link Spotify di sini
+    spotifyUrl: "https://open.spotify.com/track/3vkCueOmm7xQDoJ17W1Pm3?si=xdJwApIFQm22ZefPv69tvA&utm_source=copy-link&pi=h2daxccjTLay2", // <- tempel link Spotify di sini
   },
   {
     id: 2,
